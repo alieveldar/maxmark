@@ -253,7 +253,11 @@ if(!is_admin()){
 			$from=EDCH::getOption('edc_mail_from','settings');
 			$to=EDCH::getOption('edc_mail_to','settings');
 			$mailto=$data['edc_email'];
-			$message="Zusammenfassung Ihrer Bestellung bei den KBG Kraftstrom-Bezugsgenossenschaft Homberg eG.";
+			//$message="Zusammenfassung Ihrer Bestellung bei den KBG Kraftstrom-Bezugsgenossenschaft Homberg eG.";
+            $message = "Vielen Dank, dass Sie sich für die KBG Kraftstrom-Bezugsgenossenschaft Homburg eG entschieden haben. 
+Anbei erhalten Sie eine Bestätigung und Zusammenfassung Ihrer Bestellung und Ihre Vertragsunterlagen.
+Sollten Sie noch Fragen haben, wenden Sie sich gern jederzeit an uns.
+Sie erreichen unser Service-Telefon unter der 05681 9909-0 oder senden Sie eine E-Mail an: info@kbg-homberg.de.";
 			$new_fname=preg_replace('/(.*)\.pdf/','Bestellung vom '.date('d.m.Y - H-i').'.pdf',basename($path));
 			$new_path=str_replace(basename($path),$new_fname,$path);
 			copy($path,$new_path);

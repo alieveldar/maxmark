@@ -51,7 +51,7 @@ if(!$edc || !$edc->is_order_step) return '';
                     </select>
                 </label>
                 <label for="surname" class="o-form-label o-form-label_size-2-6">
-                    <p class="o-form-label__name"><?=__('Vorname','edc')?>*:</p>
+                    <p class="o-form-label__name"><?=__('Nachname','edc')?>*:</p>
                     <input type="text" value="" required pattern="[a-zA-Z0-9\s]+" name="edc_second_name" id="surname" class="o-form-label__input">
                 </label>
                 <label for="name" class="o-form-label o-form-label_size-2-6">
@@ -59,7 +59,7 @@ if(!$edc || !$edc->is_order_step) return '';
                     <input required name="edc_name" id="name" value="" required pattern="[a-zA-Z0-9\s]+" type="text" id="name" class="o-form-label__input">
                 </label>
                 <label for="birthday" class="o-form-label o-form-label_size-1-6">
-                    <p class="o-form-label__name"><?=__('Gebursdatum','edc')?>:</p>
+                    <p class="o-form-label__name"><?=__('Geburtsdatum','edc')?>:</p>
                     <input type="text" id="birthday" name="edc_date_of_birth" value="" class="datepicker o-form-label__input">
                 </label>
             </div>
@@ -108,8 +108,8 @@ if(!$edc || !$edc->is_order_step) return '';
                     <label for="transfer" id="transfer_label" class="o-form-checkbox__label"><?=__('Überweisung','edc')?></label>
                 </div>
                 <label for="deliveryDate" class="o-form-label o-form-label_size-2-3">
-                    <p class="o-form-label__name"><?=__('Gewünschter Lieferbeginn / bei Einzug: Datum der Schlüsselübergabe','edc')?></p>
-                    <input type="text" id="deliveryDate" name="edc_electriсDate" class="datepicker o-form-label__input hasDatepicker">
+                    <p class="o-form-label__name"><?=__('Gewünschter Lieferbeginn / bei Einzug: Datum der Schlüsselübergabe*','edc')?></p>
+                    <input required type="text" id="deliveryDate" name="edc_electriсDate" class="datepicker o-form-label__input hasDatepicker">
                 </label>
             </div>
 

@@ -60,6 +60,10 @@
 				</tr>
 			</table>
 		</div>
+
 	</div>
+    <div style="font-size: x-large;
+    color: #004c97;">Vielen Dank, dass Sie sich für uns entschieden haben!
+        In Kürze erhalten Sie eine Bestätigung Ihrer Bestellung und Ihre Vertragsunterlagen per Mail.</div>
 </div>
 
